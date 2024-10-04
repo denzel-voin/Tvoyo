@@ -1,4 +1,7 @@
 @import '../fonts/font';
+@import './base/variables';
+@import './layout/header';
+@import './components/button';
 
 html,
 div,
@@ -86,6 +89,8 @@ video {
 	font-size: 100%;
 	vertical-align: baseline;
 	border: 0;
+	color: $text-color;
+	font-family: 'TT Norms Pro', sans-serif;
 }
 
 article,
@@ -110,6 +115,7 @@ body {
 	line-height: 1;
 	vertical-align: baseline;
 	border: 0;
+	background-color: $background-color;
 }
 
 ol,

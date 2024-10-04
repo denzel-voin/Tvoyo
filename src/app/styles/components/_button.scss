@@ -1,0 +1,42 @@
+.btn {
+	cursor: pointer;
+	border: none;
+	border-radius: 12px;
+	font-weight: 500;
+	&_md {
+		font-size: 16px;
+		padding: 12px 16px;
+	}
+	&_lg {
+		font-size: 18px;
+		padding: 14.5px 20px;
+	}
+	&_default {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		background-color: rgba(255, 255, 255, 0.1);
+		color: $text-color;
+		transition: background-color .2s ease-in-out;
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.4);
+		}
+	}
+	&_primary {
+		background: linear-gradient(90deg, $start-color 0%, $end-color 100%);
+		color: $background-color;
+	}
+}
+
+.action-btn {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	color: $default-color;
+	transition: color .2s ease-in-out;
+	font-size: $font-size-default;
+	font-weight: bold;
+	&:hover {
+		color: $text-color;
+	}
+}
