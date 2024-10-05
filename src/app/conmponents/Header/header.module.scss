@@ -1,0 +1,48 @@
+@import '../../styles/base/variables';
+
+.header {
+	padding: 16px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	gap: 80px;
+	&__links {
+		display: flex;
+		gap: 28px;
+		font-weight: bold;
+		&_link {
+			font-size: $font-size-default;
+			transition: color ease-in-out .2s;
+			color: $default-color;
+			&:hover {
+				color: $text-color;
+			}
+		}
+	}
+}
+
+.action_buttons {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.action_link {
+	color: $text-color;
+	position: relative;
+	padding-bottom: 12px;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background: linear-gradient(90deg, $start-color 0%, $end-color 100%);
+		z-index: 1;
+	}
+}

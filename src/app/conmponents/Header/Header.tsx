@@ -3,31 +3,36 @@ import { LogoIcon } from "@/app/conmponents/Header/icons/LogoIcon";
 import { PromoIcon } from "@/app/conmponents/Header/icons/PromoIcon";
 import { SearchIcon } from "@/app/conmponents/Header/icons/SearchIcon";
 import { UIButton } from "@/app/conmponents/uikit/UIButton";
+import clsx from "clsx";
+import styles from "./header.module.scss";
 import Link from "next/link";
 
 export const Header = () => {
   return (
-    <div className="header">
-      <div className="navbar">
+    <div className={styles.header}>
+      <div className={styles.navbar}>
         <Link href="/">
           <LogoIcon />
         </Link>
-        <div className="navbar__links">
-          <Link href="/" className="navbar__links_link action-link">
+        <div className={styles.navbar__links}>
+          <Link
+            href="/"
+            className={clsx(styles.navbar__links_link, styles.action_link)}
+          >
             Главная
           </Link>
-          <Link href="/" className="navbar__links_link">
+          <Link href="/" className={styles.navbar__links_link}>
             Фильмы
           </Link>
-          <Link href="/" className="navbar__links_link">
+          <Link href="/" className={styles.navbar__links_link}>
             Сериалы
           </Link>
-          <Link href="/" className="navbar__links_link">
+          <Link href="/" className={styles.navbar__links_link}>
             ТВ
           </Link>
         </div>
       </div>
-      <div className="action-buttons">
+      <div className={styles.action_buttons}>
         <UIButton size="md" variant="default">
           <DownloadIcon />
           Установить

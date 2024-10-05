@@ -1,0 +1,21 @@
+@mixin respond-to($breakpoint) {
+	@if $breakpoint == mobile {
+		@media (max-width: 600px) { @content; }
+	} @else if $breakpoint == tablet {
+		@media (max-width: 900px) { @content; }
+	} @else if $breakpoint == desktop {
+		@media (min-width: 901px) { @content; }
+	}
+}
+
+// Миксин для градиента
+@mixin gradient-bg($start-color, $end-color) {
+	background: linear-gradient(90deg, $start-color 0%, $end-color 100%);
+}
+
+// Миксин для Flexbox
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
