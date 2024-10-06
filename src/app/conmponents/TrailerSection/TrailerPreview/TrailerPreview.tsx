@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const TrailerPreview = ({ selected }: { selected: ITrailerData }) => {
   return (
-    <div className={styles.overlayText}>
+    <div>
       <Image
         src={selected.title}
         height={101}

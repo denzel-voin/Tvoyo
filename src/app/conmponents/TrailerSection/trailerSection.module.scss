@@ -51,11 +51,29 @@
 	align-items: center;
 }
 
-.thumbnail {
-	border-radius: 5px;
-	width: 200px;
-	height: 120px;
+.thumbnailContainer {
+	position: relative;
+	width: 256px;
+	height: 152px;
+	
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
+	
+	.thumbnail {
+		position: relative;
+		border-radius: 16px;
+		z-index: 0;
+	}
 }
+
 
 .trailerTab:hover {
 	transform: scale(1.05);

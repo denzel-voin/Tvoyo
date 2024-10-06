@@ -23,13 +23,15 @@ export const TrailerTabs = ({
           onClick={() => handleTabClick(index)}
           style={{ position: "relative", cursor: "pointer" }}
         >
-          <Image
-            src={trailer.poster}
-            alt={`Трейлер ${index + 1}`}
-            width={256}
-            height={152}
-            className={styles.thumbnail}
-          />
+          <div className={styles.thumbnailContainer}>
+            <Image
+              src={trailer.poster}
+              alt={`Трейлер ${index + 1}`}
+              width={256}
+              height={152}
+              className={styles.thumbnail}
+            />
+          </div>
           {selectedTrailer === index && (
             <div
               className={styles.progressBar}

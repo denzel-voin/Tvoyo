@@ -1,3 +1,4 @@
+@import 'antd/dist/reset.css';
 @import '../fonts/font';
 @import './base/variables';
 @import './components/button';
@@ -125,4 +126,20 @@ ul {
 
 a {
 	text-decoration: none;
+}
+
+.ant-carousel .slick-slide {
+	padding: 10px;
+}
+
+.ant-card-meta {
+	text-align: left;
+}
+
+.ant-tag {
+	font-size: 16px;
+}
+
+.ant-card .ant-card-body {
+	padding: 0;
 }
