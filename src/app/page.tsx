@@ -1,14 +1,17 @@
 import { Header } from "@/app/conmponents/Header/Header";
+import { TrailerCarousel } from "@/app/conmponents/TrailerSection/TrailerSection";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <header>
+    <>
+      <header className={styles.container}>
         <Header />
       </header>
-      <main></main>
+      <main>
+        <TrailerCarousel />
+      </main>
       <footer></footer>
-    </div>
+    </>
   );
 }

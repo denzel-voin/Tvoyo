@@ -9,7 +9,7 @@ import img6 from "./carousel-images/carousel-img6.png";
 import img7 from "./carousel-images/carousel-img7.png";
 import img8 from "./carousel-images/carousel-img8.png";
 
-export interface ICarouselData {
+export interface ITrailerData {
   id: number;
   title: StaticImageData;
   rating: string;
@@ -20,7 +20,7 @@ export interface ICarouselData {
   poster: StaticImageData;
 }
 
-export const carouselData: ICarouselData[] = [
+export const trailerData: ITrailerData[] = [
   {
     id: 1,
     ageRating: 16,

@@ -89,7 +89,8 @@ video {
 	vertical-align: baseline;
 	border: 0;
 	color: $text-color;
-	font-family: 'TT Norms Pro', sans-serif;
+	font-family: 'TTNormsPro', sans-serif;
+	box-sizing: border-box;
 }
 
 article,
