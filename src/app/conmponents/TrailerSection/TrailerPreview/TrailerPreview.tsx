@@ -1,5 +1,5 @@
 import styles from "@/app/conmponents/TrailerSection/trailerSection.module.scss";
-import type { ITrailerData } from "@/app/test-data/carousel-data";
+import type { ITrailerData } from "@/app/types";
 import Image from "next/image";
 
 export const TrailerPreview = ({ selected }: { selected: ITrailerData }) => {

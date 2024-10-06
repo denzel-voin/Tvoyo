@@ -1,4 +1,4 @@
-import type { StaticImageData } from "next/image";
+import type { ITrailerData } from "@/app/types";
 import titleImg from "./carousel-images/title-img.png";
 import img1 from "./carousel-images/carousel-img1.png";
 import img2 from "./carousel-images/carousel-img2.png";
@@ -8,17 +8,6 @@ import img5 from "./carousel-images/carousel-img5.png";
 import img6 from "./carousel-images/carousel-img6.png";
 import img7 from "./carousel-images/carousel-img7.png";
 import img8 from "./carousel-images/carousel-img8.png";
-
-export interface ITrailerData {
-  id: number;
-  title: StaticImageData;
-  rating: string;
-  year: number;
-  genre: string;
-  country: string;
-  ageRating: number;
-  poster: StaticImageData;
-}
 
 export const trailerData: ITrailerData[] = [
   {
