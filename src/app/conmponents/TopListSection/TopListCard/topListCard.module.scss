@@ -1,0 +1,39 @@
+@import "../../../styles/base/variables";
+
+.button {
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 10px;
+	background-color: transparent;
+	color: transparent;
+	overflow: hidden;
+	transition: transform 0.3s ease, color 0.3s ease;
+	border: none;
+	padding-left: 120px;
+	
+	&:hover {
+		transform: scale(1.05);
+		color: $hover-color;
+	}
+}
+
+.wrapper {
+	position: relative;
+}
+
+.number {
+	position: absolute;
+	top: 100px;
+	left: -100px;
+	color: transparent;
+	
+	.button:hover & {
+		color: $hover-color;
+	}
+}
+
+.image {
+	border-radius: 10px;
+	position: relative;
+	z-index: 2;
+}
