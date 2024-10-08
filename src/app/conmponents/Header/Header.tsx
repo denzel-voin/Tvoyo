@@ -46,8 +46,8 @@ export const Header = () => {
         </UIButton>
         <button className="action-btn">
           <SearchIcon />
+          <button className="action-btn">Войти</button>
         </button>
-        <button className="action-btn">Войти</button>
       </div>
     </div>
   );

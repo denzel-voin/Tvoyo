@@ -23,7 +23,7 @@ export const NewListSection = () => {
       <Carousel
         ref={carouselRef}
         dots={false}
-        slidesToShow={6}
+        slidesToShow={newListData.length}
         slidesToScroll={6}
         responsive={[
           { breakpoint: 1200, settings: { slidesToShow: 4 } },
