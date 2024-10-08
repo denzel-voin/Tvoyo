@@ -1,0 +1,20 @@
+.socialLinksWrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.socialLink {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	color: rgba(255, 255, 255, 0.3);
+	transition: color .3s ease-in-out;
+	&:hover {
+		color: white;
+	}
+}
+
+.linksContainer {
+	display: flex;
+	gap: 24px;
+}

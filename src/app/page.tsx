@@ -1,3 +1,4 @@
+import { Footer } from "@/app/conmponents/Footer/Footer";
 import { Header } from "@/app/conmponents/Header/Header";
 import { NewListSection } from "@/app/conmponents/NewFilmsSection/NewListSection";
 import { PromoSection } from "@/app/conmponents/PromoSection/PromoSection";
@@ -16,6 +17,7 @@ export default function Home() {
         <NewListSection />
         <PromoSection />
         <TopListSection />
+        <Footer />
       </main>
       <footer></footer>
     </>
