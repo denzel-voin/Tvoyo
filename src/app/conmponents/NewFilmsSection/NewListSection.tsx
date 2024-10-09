@@ -20,24 +20,26 @@ export const NewListSection = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.header}>Новинки</h2>
-      <Carousel
-        ref={carouselRef}
-        dots={false}
-        slidesToShow={newListData.length}
-        slidesToScroll={6}
-        responsive={[
-          { breakpoint: 1200, settings: { slidesToShow: 4 } },
-          { breakpoint: 768, settings: { slidesToShow: 3 } },
-          { breakpoint: 576, settings: { slidesToShow: 2 } },
-        ]}
-      >
-        {newListData.map((item) => (
-          <NewFilmCard item={item} />
-        ))}
-      </Carousel>
-      <button onClick={next} className={styles.button}>
-        <RightOutlined />
-      </button>
+      <div className={styles.carouselWrapper}>
+        <Carousel
+          ref={carouselRef}
+          dots={false}
+          slidesToShow={6.2}
+          slidesToScroll={1}
+          responsive={[
+            { breakpoint: 1200, settings: { slidesToShow: 4 } },
+            { breakpoint: 768, settings: { slidesToShow: 3 } },
+            { breakpoint: 576, settings: { slidesToShow: 2 } },
+          ]}
+        >
+          {newListData.map((item) => (
+            <NewFilmCard item={item} />
+          ))}
+        </Carousel>
+        <button onClick={next} className={styles.button}>
+          <RightOutlined />
+        </button>
+      </div>
     </div>
   );
 };

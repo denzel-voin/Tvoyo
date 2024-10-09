@@ -38,16 +38,18 @@ export const Header = () => {
           Установить
         </UIButton>
         <UIButton size="md" variant="primary">
-          7 дней за 0 ₽
+          7 дней за 0 ₽
         </UIButton>
         <UIButton size="md" variant="default">
           <PromoIcon />
           Промокод
         </UIButton>
-        <button className="action-btn">
-          <SearchIcon />
+        <div className={styles.btnWrapper}>
+          <button className="action-btn">
+            <SearchIcon />
+          </button>
           <button className="action-btn">Войти</button>
-        </button>
+        </div>
       </div>
     </div>
   );

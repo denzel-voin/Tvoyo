@@ -2,7 +2,6 @@
 
 .button {
 	width: 100%;
-	margin: 0 auto;
 	border-radius: 10px;
 	background-color: transparent;
 	color: transparent;
@@ -10,6 +9,7 @@
 	transition: transform 0.3s ease, color 0.3s ease;
 	border: none;
 	padding-left: 120px;
+	margin-left: 190px;
 	
 	&:hover {
 		transform: scale(1.05);

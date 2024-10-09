@@ -23,8 +23,9 @@ export const TopListSection = () => {
       <Carousel
         ref={carouselRef}
         dots={false}
-        slidesToShow={5}
+        slidesToShow={4.5}
         slidesToScroll={1}
+        touchMove={true}
         responsive={[
           { breakpoint: 1200, settings: { slidesToShow: 4 } },
           { breakpoint: 768, settings: { slidesToShow: 3 } },
